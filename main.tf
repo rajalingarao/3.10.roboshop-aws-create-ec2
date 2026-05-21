@@ -2,7 +2,7 @@ resource "aws_instance" "roboshop_aws_create_ec2" {
     ami           = data.aws_ami.rhel_info.id
     instance_type = var.ec2_instance.instance_type
     vpc_security_group_ids = [var.allow_everything]
-
+    user_data = file("${path.module}/install_aws.sh")
     # Define the root volume size and type
     root_block_device {
         encrypted             = false

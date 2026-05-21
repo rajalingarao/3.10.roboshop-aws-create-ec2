@@ -53,6 +53,6 @@ aws route53 change-resource-record-sets --hosted-zone-id $hosted_zone_id --chang
 }"
 
 echo "$name cleanup done"
-echo "----------------------------------"
+echo "**********************************************"
 
 done
