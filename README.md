@@ -1,3 +1,4 @@
+
 # Before starting application, configure 'aws configure' on ec2 and then below commands.
 ```
 aws configure
@@ -22,22 +23,23 @@ terraform apply -auto-approve
 terraform destroy -auto-approve
 ```
 
-# Login into Linux server and create ec2 using AWS.
+
+# Login into linux server and create ec2 using aws.
 
 ```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
+git clone https://github.com/rajalingarao/3.9.expense-aws-create-ec2.git
 ```
 ```
-cd 3.10.roboshop-aws-create-ec2
+cd 3.9.expense-aws-create-ec2
 ```
 
 ```
-sudo sh create-ec2-aws-roboshop.sh
+sudo sh create-ec2-aws-expense.sh
 ```
 # Delete ec2 instances using aws.
 
 ```
-sudo sh delete-ec2-aws-roboshop.sh
+sudo sh delete-ec2-aws-expense.sh
 ```
 
 * After creating three ec2 instance and then deploy the application.
@@ -47,149 +49,42 @@ sudo sh delete-ec2-aws-roboshop.sh
 ssh ec2-user@mysql.lithesh.shop
 ```
 ```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
+git clone https://github.com/rajalingarao/3.4.expense-shellscript.git
 ```
 ```
-cd 3.10.roboshop-aws-create-ec2
+cd 3.4.expense-shellscript
 ```
 ```
 sudo sh mysql.sh
 ```
-# Login into mongodb server, run below commands
+# Login into backend server, run below commands
 ```
-ssh ec2-user@mongodb.lithesh.shop
-```
-```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
+ssh ec2-user@backend.lithesh.shop
 ```
 ```
-cd 3.10.roboshop-aws-create-ec2
+git clone https://github.com/rajalingarao/3.4.expense-shellscript.git
 ```
 ```
-sudo sh mongodb.sh
-```
-# Login into redis server, run below commands
-```
-ssh ec2-user@redis.lithesh.shop
+cd 3.4.expense-shellscript
 ```
 ```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
-```
-```
-cd 3.10.roboshop-aws-create-ec2
-```
-```
-sudo sh redis.sh
-```
-# Login into rabbitmq server, run below commands
-```
-ssh ec2-user@rabbitmq.lithesh.shop
-```
-```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
-```
-```
-cd 3.10.roboshop-aws-create-ec2
-```
-```
-sudo sh rabbitmq.sh
+sudo sh backend.sh
 ```
 
-
-# Login into catalogue server, run below commands
+# Login into frontend server, run below commands
 ```
-ssh ec2-user@catalogue.lithesh.shop
-```
-```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
+ssh ec2-user@frontend.lithesh.shop
 ```
 ```
-cd 3.10.roboshop-aws-create-ec2
+git clone https://github.com/rajalingarao/3.4.expense-shellscript.git
 ```
 ```
-sudo sh catalogue.sh
-```
-# Login into cart server, run below commands
-```
-ssh ec2-user@cart.lithesh.shop
+cd 3.4.expense-shellscript
 ```
 ```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
+sudo sh frontend.sh
 ```
+# Delete ec2 instances using aws.
 ```
-cd 3.10.roboshop-aws-create-ec2
-```
-```
-sudo sh cart.sh
-```
-
-
-# Login into user server, run below commands
-```
-ssh ec2-user@user.lithesh.shop
-```
-```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
-```
-```
-cd 3.10.roboshop-aws-create-ec2
-```
-```
-sudo sh user.sh
-```
-
-# Login into shipping server, run below commands
-```
-ssh ec2-user@shipping.lithesh.shop
-```
-```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
-```
-```
-cd 3.10.roboshop-aws-create-ec2
-```
-```
-sudo sh shipping.sh
-```
-
-# Login into payment server, run below commands
-```
-ssh ec2-user@payment.lithesh.shop
-```
-```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
-```
-```
-cd 3.10.roboshop-aws-create-ec2
-```
-```
-sudo sh payment.sh
-```
-
-# Login into web server, run below commands
-```
-ssh ec2-user@web.lithesh.shop
-```
-```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
-```
-```
-cd 3.10.roboshop-aws-create-ec2
-```
-```
-sudo sh web.sh
-```
-
-# Login into dispatch server, run below commands
-```
-ssh ec2-user@dispatch.lithesh.shop
-```
-```
-git clone https://github.com/rajalingarao/3.10.roboshop-aws-create-ec2.git
-```
-```
-cd 3.10.roboshop-aws-create-ec2
-```
-```
-sudo sh dispatch.sh
+sudo sh delete-ec2-aws-expense.sh
 ```
